@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg" >
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/ads_id" />
+   
+    <TextView
+        android:id="@+id/text_storage_prefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_fiiename"
+        android:layout_alignParentRight="true"
+        android:text="/##.csv"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    <EditText
+        android:id="@+id/editText_fiiename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_storage_prefix"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/textView2"
+        android:ems="10"
+        android:hint="Folder name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_storage_prefix"
+        android:layout_below="@+id/editText_fiiename"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/file_msg" />
+    
+     <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/blue_button_selector"
+        android:onClick="submit"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Next" />
+     
+     <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/blue_button_selector"
+        android:onClick="option2Back"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Back" />
+
+</RelativeLayout>

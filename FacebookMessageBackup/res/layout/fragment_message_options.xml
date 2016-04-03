@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg" >
+
+    <LinearLayout
+        android:id="@+id/rangebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/text_range_low"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/text_range_high"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.chamika.fbmsgbackup.views.RotaryKnobView
+        android:id="@+id/rotaryknob"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rotary_knob_height"
+        android:layout_below="@id/rangebar"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/rotary_knob_height"
+        android:layout_alignTop="@id/rotaryknob"
+        android:gravity="center_vertical|right"
+        android:minWidth="75dp" >
+
+        <RadioButton
+            android:id="@+id/radio_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:button="@drawable/custom_radio_min"
+            android:checked="true"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/radio_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:button="@drawable/custom_radio_max"
+            android:text="" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rotaryknob"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/card_white"
+        android:weightSum="1.0" >
+
+        <ListView
+            android:id="@+id/listViewMin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/dots" >
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/listViewMax"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/blue_button_selector"
+        android:onClick="option1Next"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

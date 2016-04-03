@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     <item android:drawable="@drawable/btn_radio_on" android:state_checked="true" android:state_window_focused="false"/> -->
+<!--     <item android:drawable="@drawable/btn_radio_off" android:state_checked="false" android:state_window_focused="false"/> -->
+<!--     <item android:drawable="@drawable/btn_radio_on" android:state_checked="true" android:state_pressed="true"/> -->
+<!--     <item android:drawable="@drawable/btn_radio_off" android:state_checked="false" android:state_pressed="true"/> -->
+<!--     <item android:drawable="@drawable/btn_radio_on" android:state_checked="true" android:state_focused="true"/> -->
+<!--     <item android:drawable="@drawable/btn_radio_off" android:state_checked="false" android:state_focused="true"/> -->
+    <item android:drawable="@drawable/rad_max_normal" android:state_checked="false"/>
+    <item android:drawable="@drawable/rad_max_selected" android:state_checked="true"/>
+
+</selector>
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android"> -->
+<!--     <item android:drawable="@drawable/radio_hover" android:state_checked="true" android:state_window_focused="false"/> -->
+<!--     <item android:drawable="@drawable/radio_normal" android:state_checked="false" android:state_window_focused="false"/> -->
+<!--     <item android:drawable="@drawable/radio_active" android:state_checked="true" android:state_pressed="true"/> -->
+<!--     <item android:drawable="@drawable/radio_active" android:state_checked="false" android:state_pressed="true"/> -->
+<!--     <item android:drawable="@drawable/radio_hover" android:state_checked="true" android:state_focused="true"/> -->
+<!--     <item android:drawable="@drawable/radio_normal_off" android:state_checked="false" android:state_focused="true"/> -->
+<!--     <item android:drawable="@drawable/radio_normal" android:state_checked="false"/> -->
+<!--     <item android:drawable="@drawable/radio_hover" android:state_checked="true"/> -->
+<!-- </selector> -->

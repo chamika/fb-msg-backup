@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chamika.fbmsgbackup"
+    android:versionCode="6"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="FBMsgBackupApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/tracker" />
+
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.FBAuthActivity"
+            android:label="@string/title_activity_fbauth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.OptionsActivity"
+            android:label="@string/title_activity_options"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.StatusActivity"
+            android:label="@string/title_activity_status"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.FolderBrowserActivity"
+            android:label="@string/title_activity_folder_browser"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".service.DownloaderService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/title_downloader_service" >
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.chamika.fbmsgbackup.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

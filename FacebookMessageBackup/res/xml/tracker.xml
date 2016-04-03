@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+        
+<!--     release -->
+    <string name="ga_trackingId">UA-51446836-1</string>
+    
+<!--     testing -->
+<!--     <string name="ga_trackingId">UA-51451263-1</string> -->
+    
+    <bool name="ga_dryRun">false</bool>
+<!--     <string name="ga_logLevel">verbose</string> -->
+	
+	<integer name="ga_sessionTimeout">300</integer>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+	<!-- activities -->
+    <screenName name="com.chamika.fbmsgbackup.activity.MainActivity">
+        MainActivity
+    </screenName>
+    <screenName name="com.chamika.fbmsgbackup.activity.FBAuthActivity">
+        FBAuthActivity
+    </screenName>
+    <screenName name="com.chamika.fbmsgbackup.activity.OptionsActivity">
+        OptionsActivity
+    </screenName>
+    <screenName name="com.chamika.fbmsgbackup.activity.StatusActivity">
+        StatusActivity
+    </screenName>
+    <screenName name="com.chamika.fbmsgbackup.activity.FolderBrowserActivity">
+        FolderBrowserActivity
+    </screenName>
+</resources>
