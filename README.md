@@ -11,7 +11,7 @@ After Facebook restricted 3rd party applications to retrieve user messages the a
 This is an eclipse project. Open from eclipse and build.
 
 ## Screenshots
-![Conversation select](images/screen1_small.jpeg?raw=true "Conversation select")
-![Select range](images/screen2_small.jpeg?raw=true "Select range")
-![Filename](images/screen3_small.jpeg?raw=true "Filename")
-![Start download](images/screen4_small.jpeg?raw=true "Start download")
+![Conversation select](images/screen1.jpeg?raw=true "Conversation select")
+![Select range](images/screen2.jpeg?raw=true "Select range")
+![Filename](images/screen3.jpeg?raw=true "Filename")
+![Start download](images/screen4.jpeg?raw=true "Start download")
